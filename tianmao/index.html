@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+				.flex-contrainer{
+					display: -webkit-flex;
+					display: flex;
+					-webkit-flex-wrap: wrap ;
+					flex-wrap: wrap;
+				    width: 100%;
+				    height: 100%;
+				    border: solid 1px red;
+				    justify-content:center;/*靠向主轴尾*//*flex-start:靠向主轴头*//*center:靠向主轴中间*//*space-between:平均分布(首尾距离边框无距离)*//*space-around:均匀分布(两端距离边框有距离)*/
+				    align-items: flex-start;/*靠向副轴尾*//*flex-start,flex-end,center:同上*//*stretch:拉伸充满整个容器*//*baseline:伸缩项目根据基线对齐*/
+				    align-content/*对只有一行伸缩容器的没有效果*/:/*其他同align-item*/ ;
+				}
+				.flex-item{
+					background-color:white; 
+					width: 400px;
+					height: 400px; 
+					margin: 10px;;
+					}
+				.top{
+					background:url(img/QQ图片20191113194202.png);
+					height: 100px;
+					width: 100%;
+					flex-wrap: wrap;
+					
+					}
+				.search_box{
+				position:relative;
+				width: 1500px;
+				height: 70px;
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				font-family: 12px;
+				left: 600px;
+				top: 25px;
+			 }
+				.search_box button{
+            	float: left;
+            	width: 50px;
+            	height: 50px;
+            	text-indent: -9999px;
+            	border: 0 none;
+                
+                cursor: pointer;}
+                 .search_box input{
+            	float: left;
+            	width: 600px;
+            	height: 50px;
+            	padding: 1px 2px;
+            	margin: 0px 5px;
+            	border: 1px solid #619FCF;
+            }
+            @media only screen and (min-width:800px ) {
+            	.flex-item{
+            		height: 400px;
+            		width: 31%;
+            	}
+            @media only screen and (max-width: 800px) {
+            		.flex-item{
+            			height: 400px;
+            			width: 100%;
+            		}
+            	}
+            	
+            }
+			</style>
+	</head>
+	<body>
+		<div class="top">
+			<div class="search_box"><input type="text" value="索尼WH-100XM3"/><button type="submit" value="搜索"><h2>搜索</h2></button></div>
+		</div>
+		<div class="flex-contrainer">
+			<div class="flex-item"><img src="img/O1CN0122AEDnFOBApUNio_!!1917047079.jpg"/ width="465px" height="320px"><br/><a href="https://detail.tmall.com/item.htm?spm=a220m.1000858.1000725.6.3f3dd5eeN2ktXS&id=581250583813&areaId=431000&standard=1&user_id=1917047079&cat_id=2&is_b=1&rn=fcd2fd5f7f6368228aeb564ccf9f8484" ><b>Apple 12.9寸</b><br /><b>7890元</b></a></div>
+			<div class="flex-item"><img src="img/O1CN01DJgonN1QrmaIzhqcX_!!0-item_pic.jpg"/ width="465px" height="320px"><a href="https://detail.tmall.com/item.htm?spm=a220m.1000858.1000725.2.20725bc8mfm2kn&id=577226541195&skuId=4423140003313&areaId=431000&user_id=2548622030&cat_id=2&is_b=1&rn=4764e2f843164ab02bfd5d049d08a2b2"><b>9号卡丁车</b><br/><b>6698元</b></a></div>
+			<div class="flex-item"><img src="img/O1CN018bRLOf2N82M2b7Z44_!!1800399917.jpg" width="465px" height="320px"/><a href="https://detail.tmall.com/item.htm?spm=a220m.1000858.1000725.1.62ef17bdSdZCTg&id=606698659201&skuId=4247955340849&areaId=431000&user_id=1800399917&cat_id=2&is_b=1&rn=b19ead3b8c3fb5cbf54b966cf6cdd566"><b>华为mate30 pro</b><br/><b>6698元</b></a></div>
+			
+		</div>
+	</body>
+</html>
